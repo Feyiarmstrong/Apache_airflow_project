@@ -1,0 +1,16 @@
+data
+.env
+__pycache__/
+logs/
+.data/
+venv/
+airflow.db
+
+.env
+dags/__pycache__/
+dags/launchpad_launches/
+dags/weather_data.py
+data/
+logs/
+plugins
+config

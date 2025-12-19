@@ -1,0 +1,4 @@
+requests
+pendulum
+psycopg2-binary
+apache-airflow-providers-postgres
