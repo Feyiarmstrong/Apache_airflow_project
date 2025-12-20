@@ -52,27 +52,49 @@ Data Source: Wikimedia Foundation publicly available pageview data (2015-present
 
 ### High-Level Architecture
 ┌─────────────┐
+
 │  Wikipedia  │
+
 │   Dumps     │ (Wikimedia Foundation)
+
 └──────┬──────┘
+
        │
+       
        ▼
+       
 ┌─────────────────────────────────────────────────────────┐
+
 │              Apache Airflow (Docker)                    │
+
 │  ┌─────────┐  ┌─────────┐  ┌────────┐  ┌──────┐         │
+
 │  │Download │→ │ Extract │→ │ Filter │→ │ Load │→        │
+
 │  └─────────┘  └─────────┘  └────────┘  └──────┘         │
+
 │                                             │           │
+
 │                                             ▼           │
+
 │                                      ┌──────────────┐   │
+
 │                                      │  PostgreSQL  │   │
+
 │                                      │   Database   │   │
+
 │                                      └──────────────┘   │
+
 │                                             │           │
+
 │                                             ▼           │
+
 │                                      ┌──────────────┐   │
+
 │                                      │   Analysis   │   │
+
 │                                      └──────────────┘   │
+
 └─────────────────────────────────────────────────────────┘
 
 ##  Design & Architecture Documentation
