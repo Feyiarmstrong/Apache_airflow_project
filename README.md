@@ -2,7 +2,7 @@
 
 An automated **Apache Airflow ETL pipeline** that ingests Wikipedia pageview data and analyzes public interest trends for major tech companies.
 
-This pipeline to explore how Wikipedia traffic can act as a **proxy for market sentiment**.
+This pipeline explores how Wikipedia traffic can act as a **proxy for market sentiment**.
 
 ---
 
