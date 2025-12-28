@@ -177,8 +177,8 @@ def load_pageviews_by_date(
 
 
 if __name__ == "__main__":
-    # December 17, 2025 at 4 PM (UTC)
-    test_date = datetime(2025, 12, 17, 16, tz="UTC")
+    # December 1, 2025 at 4 PM (UTC)
+    test_date = datetime(2025, 12, 1, 12, tz="UTC")
 
     try:
         rows = load_pageviews_by_date(
