@@ -1,5 +1,3 @@
-
-
 import csv
 import logging
 import os
@@ -63,5 +61,5 @@ def analyze_pageviews(csv_path: str, output_dir: str = "./data/processed") -> st
 
 if __name__ == "__main__":
     # Example usage
-    csv_file = "./data/processed/filtered_pageviews-20251217-160000.csv"
+    csv_file = "./data/processed/filtered_pageviews-20251201-120000.csv"
     analyze_pageviews(csv_file)
